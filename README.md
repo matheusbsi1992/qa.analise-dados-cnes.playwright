@@ -126,7 +126,7 @@ Dessa forma, o projeto trabalha com dois tipos complementares de evidência:
        Evidência visual       Evidência estruturada
              │                       │
           Vídeo                    Excel
-          (.mp4)                   (.xlsx)
+          (.mp4/.webm)                   (.xlsx)
 ```
 
 ---
@@ -457,16 +457,8 @@ npx playwright test --headed
 Para executar um teste específico:
 
 ```bash
-npx playwright test tests/NOME_DO_TESTE.spec.js
+npx playwright test tests/QA.page.cnes.profissionais.spec.js --headed
 ```
-
-Para utilizar o modo de depuração:
-
-```bash
-npx playwright test --debug
-```
-
-Os comandos específicos podem variar de acordo com a configuração existente no projeto.
 
 ---
 
@@ -479,7 +471,6 @@ Entre as possibilidades:
 ```text
 Chromium
 Firefox
-WebKit
 ```
 
 Isso possibilita ampliar a cobertura do cenário e verificar o comportamento da automação em diferentes ambientes de navegador.
@@ -541,26 +532,6 @@ Quando isso ocorre, o trabalho de QA não deve necessariamente terminar na ident
 - qual estratégia alternativa mantém a confiabilidade da análise.
 
 Neste cenário, a impossibilidade de utilizar a impressão conforme esperado levou à adoção de uma estratégia baseada na **coleta automatizada dos dados e geração de evidência estruturada**.
-
----
-
-# 🧪 Conceitos de testes aplicados
-
-O projeto envolve conceitos relacionados a:
-
-- Test Automation;
-- End-to-End Testing;
-- Functional Testing;
-- Data Validation;
-- Evidence Collection;
-- Regression Testing;
-- Exploratory Testing;
-- Web Automation;
-- Test Evidence;
-- Test Traceability;
-- Automated Data Extraction.
-
-A aplicação desses conceitos permite utilizar a automação não apenas para verificar se um botão ou elemento está funcionando, mas também para **produzir dados e evidências úteis para o processo de qualidade**.
 
 ---
 
